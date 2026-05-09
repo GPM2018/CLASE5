@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos en JavaScript - CLASE 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .link-card {
+            background: #f8f9fa;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .link-card:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.2);
+        }
+
+        .link-card h3 {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .link-card p {
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Eventos en JavaScript</h1>
+            <p>CLASE 5 - Aprende a trabajar con eventos</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2>📚 Ejercicios de Eventos</h2>
+                <div class="links-grid">
+                    <a href="onclick.html" class="link-card">
+                        <h3>onclick</h3>
+                        <p>Evento al hacer clic</p>
+                    </a>
+                    <a href="onchange.html" class="link-card">
+                        <h3>onchange</h3>
+                        <p>Evento al cambiar un valor</p>
+                    </a>
+                    <a href="oncopy.html" class="link-card">
+                        <h3>oncopy</h3>
+                        <p>Evento al copiar contenido</p>
+                    </a>
+                    <a href="onplay.html" class="link-card">
+                        <h3>onplay</h3>
+                        <p>Evento al reproducir media</p>
+                    </a>
+                    <a href="listener.html" class="link-card">
+                        <h3>EventListener</h3>
+                        <p>Escuchadores de eventos</p>
+                    </a>
+                    <a href="input.html" class="link-card">
+                        <h3>Input</h3>
+                        <p>Evento input</p>
+                    </a>
+                    <a href="zoom.html" class="link-card">
+                        <h3>Zoom</h3>
+                        <p>Control de zoom</p>
+                    </a>
+                    <a href="clima.html" class="link-card">
+                        <h3>Clima</h3>
+                        <p>Aplicación de clima</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📝 Cuestionario</h2>
+                <div class="links-grid">
+                    <a href="cuestionario.html" class="link-card">
+                        <h3>Preguntas de Eventos</h3>
+                        <p>Prueba tus conocimientos</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 - Clase 5: Eventos en JavaScript</p>
+        </footer>
+    </div>
+</body>
+</html>
